@@ -1,0 +1,124 @@
+/* Add your existing styles here */
+
+.profile-container {
+     width: 100%;
+   
+   }
+   
+   /* .profile-header {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 20px;
+     height: 40vh;
+     background-color: white;
+   } */
+   
+   .profile-pic {
+     border-radius: 30%;
+     background-color: #ffffff;
+     overflow: hidden;
+     border: 2px solid white;
+   
+   }
+   
+   .personal {
+     text-align: left;
+   }
+   
+   .descrip {
+     text-align: left;
+     background-color: #ffffff;
+     border: 2px solid #e0e0e0;
+     border-radius: 10px;
+     padding: 20px;
+     margin-bottom: 20px;
+   }
+   
+   /* Add styles for other sections as needed */
+   
+   /* .profile-container {
+       width: 100%;
+       margin: auto;
+     }
+     
+     .profile-header {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 20px;
+       height: 40vh;
+       background-color: #DBF1CC;
+     }
+     
+     .profile-pic {
+       border-radius: 50%;
+       background-color: #ffffff;
+       padding: 20px;
+     }
+   
+     .personal{
+       text-align: left;
+     }
+     .descrip{
+       text-align: left;
+       background-color: white;
+       border: 2px solid #ffffff;
+       border-radius: 10px;
+       padding: 10px;
+     } */
+   .edit-button {
+     background-color: #112A46;
+     color: #ffffff;
+     border: none;
+     padding: 10px;
+     border-radius: 5px;
+     cursor: pointer;
+   
+   }
+   
+   .profile-content {
+     display: flex;
+     justify-content: space-between;
+     padding: 20px;
+   
+   }
+   
+   .left-box {
+     width: 100%;
+     border-radius: 10px;
+     padding: 20px;
+     background-color: white;
+   }
+   
+   .right-box {
+     width: 35%;
+     background-color: white;
+     border-radius: 10px;
+     padding: 20px;
+     margin-left: 10px;
+   }
+   
+   .status-bar {
+     margin-bottom: 20px;
+   }
+   
+   .relevant-jobs li {
+     text-decoration: none;
+     text-align: left;
+   }
+   
+   .skills,
+   .hobbies,
+   .relevant-jobs {
+     margin-top: 20px;
+   }
+   
+   ul {
+     list-style: none;
+     padding: 0;
+   }
+   
+   li {
+     margin-bottom: 5px;
+   }

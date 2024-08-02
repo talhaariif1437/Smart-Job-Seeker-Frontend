@@ -1,0 +1,73 @@
+.job-form {
+    background-color: aliceblue;
+     width: 100%;
+     padding-left: 6%;
+     padding-right: 6%;
+ }
+ 
+ .skill {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     width: auto;
+     height: 45px;
+     padding: 0px 12px
+ }
+ 
+ .job-error {
+     font-size: 14px;
+     margin-bottom: -10px;
+ }
+ 
+ /* @media screen and (max-width:900px) {
+     .job-form {
+         width: 70%;
+     }
+ }
+ 
+ @media screen and (max-width:800px) {
+     .job-form {
+         width: 75%;
+     }
+ }
+ 
+ @media screen and (max-width:700px) {
+     .job-form {
+         width: 80%;
+     }
+ }
+ 
+ @media screen and (max-width:600px) {
+     .job-form {
+         width: 85%;
+     }
+ }
+ 
+ @media screen and (max-width:500px) {
+     .job-form {
+         width: 90%;
+     }
+ } */
+ .microphone-button11 {
+   
+    
+    position: absolute;
+    right: 10px;
+    top: 65%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .microphone-icon11 {
+    color: #131212;
+   
+    /* margin-right: 35px;  */
+  }
+  
+  /* .inputMic{
+    display: flex;
+    align-items: center;
+    
+  } */

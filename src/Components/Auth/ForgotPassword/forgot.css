@@ -1,0 +1,325 @@
+.container_forgot {
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.forgot-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.forgot-forgot {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 75%;
+  width: 50%;
+  transition: 1s 0.7s ease-in-out;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 5;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 5rem;
+  transition: all 0.2s 0.7s;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+form.forgot-form {
+  z-index: 2;
+}
+
+.forgot-password-input-field {
+  margin: 10px 0;
+  position: relative;
+}
+.forgot-password-title {
+  font-size: 1.3rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+.forgot-password-input-field input {
+  background-color: #f0f0f0;
+  border: none;
+  outline: none;
+  border-radius: 55px;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #333;
+  padding: 15px 60px;
+  padding-left: 50px;
+  width: 100%;
+}
+
+.forgot-password-icons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  color: black;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+
+.forgot-password-btn {
+  width: 32%;
+  height: 42px;
+  border-radius: 49px;
+  background-color: #5995fd;
+  border: none;
+  outline: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 13px;
+}
+
+.forgot-password-btn:hover {
+  background-color: #4d84e2;
+}
+.back p {
+  margin-top: 20px;
+  font-size: small;
+}
+
+.back a {
+  color: black;
+  text-decoration: none;
+}
+.back a:hover {
+  text-decoration: underline;
+}
+.forgot-panels-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.container_forgot:before {
+  content: "";
+  position: absolute;
+  height: 2000px;
+  width: 2000px;
+  top: -10%;
+  right: 48%;
+  transform: translateY(-50%);
+  background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
+  transition: 1.8s ease-in-out;
+  border-radius: 50%;
+  z-index: 6;
+}
+
+.image {
+  width: 100%;
+  transition: transform 1.1s ease-in-out;
+  transition-delay: 0.4s;
+}
+
+.panel-forgot {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 6;
+}
+
+.left-forgot-panel {
+  pointer-events: all;
+  padding: 3rem 17% 2rem 12%;
+}
+
+.panel-forgot .forgot-content {
+  color: #fff;
+  transition: transform 0.9s ease-in-out;
+  transition-delay: 0.6s;
+}
+
+.panel-forgot h3 {
+  font-weight: 600;
+  line-height: 1;
+  font-size: 1.5rem;
+}
+
+.panel-forgot p {
+  font-size: 0.95rem;
+  padding: 0.7rem 0;
+}
+
+.container_forgot.forgot-mode:before {
+  transform: translate(100%, -50%);
+  right: 52%;
+}
+
+.container_forgot.forgot-mode .left-forgot-panel .image,
+.container_forgot.forgot-mode .left-forgot-panel .forgot-content {
+  transform: translateX(-800px);
+}
+
+.container_forgot.forgot-mode .forgot-forgot {
+  left: 25%;
+}
+
+.container_forgot.forgot-mode form.forgot-form {
+  opacity: 0;
+  z-index: 1;
+}
+
+.container_forgot.forgot-mode .left-forgot-panel {
+  pointer-events: none;
+}
+
+@media (max-width: 450px) {
+  .forgot-container {
+    margin: 0;
+  }
+}
+
+@media (max-width: 870px) {
+  .container_forgot {
+    min-height: 800px;
+    height: 100vh;
+  }
+  .forgot-forgot {
+    width: 100%;
+    top: 95%;
+    transform: translate(-50%, -100%);
+    transition: 1s 0.8s ease-in-out;
+  }
+
+  .forgot-forgot,
+  .container_forgot.forgot-mode .forgot-forgot {
+    left: 50%;
+  }
+
+  .forgot-panels-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+
+  .panel-forgot {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.5rem 8%;
+    grid-column: 1 / 2;
+  }
+  .left-forgot-panel {
+    grid-row: 1 / 2;
+  }
+
+  .image {
+    width: 200px;
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 0.6s;
+  }
+
+  .panel-forgot .forgot-content {
+    padding-right: 15%;
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 0.8s;
+  }
+
+  .panel-forgot h3 {
+    font-size: 1.2rem;
+  }
+
+  .panel-forgot p {
+    font-size: 0.7rem;
+    padding: 0.5rem 0;
+  }
+
+  .container_forgot:before {
+    width: 1500px;
+    height: 1500px;
+    transform: translateX(-50%);
+    left: 30%;
+    bottom: 68%;
+    right: initial;
+    top: initial;
+    transition: 2s ease-in-out;
+  }
+
+  .container_forgot.forgot-mode:before {
+    transform: translate(-50%, 100%);
+    bottom: 32%;
+    right: initial;
+  }
+
+  .container_forgot.forgot-mode .left-forgot-panel .image,
+  .container_forgot.forgot-mode .left-forgot-panel .forgot-content {
+    transform: translateY(-300px);
+  }
+
+  .container_forgot.forgot-mode .forgot-forgot {
+    top: 5%;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (max-width: 570px) {
+  form {
+    padding: 100px 1.5rem;
+  }
+
+  .image {
+    display: none;
+  }
+  .panel-forgot .forgot-content {
+    padding: 0.5rem 1rem;
+  }
+  .container_forgot {
+    padding: 1.5rem;
+  }
+
+  .container_forgot:before {
+    bottom: 72%;
+    left: 50%;
+  }
+
+  .container_forgot.forgot-mode:before {
+    bottom: 28%;
+    left: 50%;
+  }
+}
+.forgot-password-icons {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.microphone-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.microphone-icon {
+  color: #131212;
+  margin-right: 35px;
+}

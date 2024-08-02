@@ -1,0 +1,48 @@
+.maindiv {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 64px 1fr;
+}
+.header {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  padding: 0%;
+  position: fixed; /* Fix the top bar's position */
+  width: calc(100% - 240px); /* Adjust width based on sidebar width */
+  left: 240px; /* Position after the sidebar */
+  z-index: 1000; /* Ensure the top bar stays on top */
+  transition: 0.5s;
+}
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  height: 100vh;
+}
+.main {
+  /* display: grid; */
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  overflow-y: auto;
+}
+@media (max-width: 1125px) {
+  .maindiv {
+    grid-template-columns: auto; /* Change to single column layout */
+  }
+
+  .header {
+    width: calc(100% - 90.4px); /* Make top bar span full width */
+    left: 90.4px; /* Position at the beginning */
+    transition: 0.95s;
+  }
+
+  .sidebar {
+    display: block; /* Ensure sidebar is always visible */
+    width: 100%; /* Make sidebar span full width */
+    position: static; /* Reset position to normal flow */
+    top: auto; /* Reset top */
+    bottom: auto; /* Reset bottom */
+    overflow-y: auto; /* Add scrollbar if sidebar content exceeds viewport height */
+  }
+}
