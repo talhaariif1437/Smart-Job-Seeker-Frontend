@@ -8,7 +8,7 @@ function TimeExchangePerson() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:7000/api/user/timeExchangeUsers'); // Replace with your actual API endpoint
+        const response = await axios.get('https://smartjobseeker-fe218b533e4f.herokuapp.com/api/user/timeExchangeUsers'); // Replace with your actual API endpoint
         console.log(response.data); // Log the response to check the structure
 
         // Access the array of activities
@@ -47,7 +47,7 @@ function TimeExchangePerson() {
             <ul className="my-1" key={index}>
               <li className="flex px-4">
                 <div className="w-9 h-9 rounded-full flex-shrink-0 my-2 mr-3">
-                  <img src={`http://localhost:7000/${activity.profilePicture}`} alt="Profile" className="w-full h-full rounded-full" />
+                  <img src={`https://smartjobseeker-fe218b533e4f.herokuapp.com/${activity.profilePicture}`} alt="Profile" className="w-full h-full rounded-full" />
                 </div>
                 <div className="flex-grow flex items-center border-b border-gray-100 dark:border-gray-400 text-sm text-gray-600 dark:text-gray-100 py-2">
                   <div className="flex-grow flex justify-between items-center">

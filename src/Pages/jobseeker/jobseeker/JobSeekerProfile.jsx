@@ -30,7 +30,7 @@ export default function JobSeekerProfile() {
     const userId = userType?._id;
     console.log("User id is",userId);
     axios
-      .get(`http://localhost:7000/api/user/pdfResume/${userId}`, {
+      .get(`https://smartjobseeker-fe218b533e4f.herokuapp.com/api/user/pdfResume/${userId}`, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
@@ -48,7 +48,7 @@ export default function JobSeekerProfile() {
           <div className="py-2 flex flex-wrap relative">
               {console.log({"profile":userType.profilePicture})}
               <img
-                src={`http://localhost:7000/${userType?.profilePicture}`}
+                src={`https://smartjobseeker-fe218b533e4f.herokuapp.com/${userType?.profilePicture}`}
                 alt="hammad"
                 className="rounded-full w-[120px] h-[120px]"
               />

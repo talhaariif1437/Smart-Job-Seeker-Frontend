@@ -185,7 +185,7 @@ const JobSeekerForm = () => {
   
     try {
       const response = await axios.post(
-        "http://localhost:7000/api/user/updateCompanyProfile",
+        "https://smartjobseeker-fe218b533e4f.herokuapp.com/api/user/updateCompanyProfile",
         formData1,
         {
           headers: {

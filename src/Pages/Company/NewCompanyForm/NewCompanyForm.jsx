@@ -62,7 +62,7 @@ const NewCompanyForm = () => {
   
   
     try {
-      const response = await axios.post("http://localhost:7000/api/user/updateCompanyProfile", formData, {
+      const response = await axios.post("https://smartjobseeker-fe218b533e4f.herokuapp.com/api/user/updateCompanyProfile", formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           'Authorization': `Bearer ${token}`

@@ -16,7 +16,7 @@ const VerifyOtp = () => {
     console.log("Form submitted with email and OTP");
 
     
-      const response = await axios.post("http://localhost:7000/api/auth/verifyCode", { email, otp });
+      const response = await axios.post("https://smartjobseeker-fe218b533e4f.herokuapp.com/api/auth/verifyCode", { email, otp });
       const responseData = response.data;
       console.log(response.data)
 

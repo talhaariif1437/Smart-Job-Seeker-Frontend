@@ -14,7 +14,7 @@ const SetNewPassword = () => {
 
     try {
       // Make API request to set new password
-      const response = await axios.post("http://localhost:7000/api/auth/resetPassword", { email,password });
+      const response = await axios.post("https://smartjobseeker-fe218b533e4f.herokuapp.com/api/auth/resetPassword", { email,password });
       setMessage("Password updated successfully.");
       console.log('Password update response:', response.data);
       // Redirect to login page after successful password update

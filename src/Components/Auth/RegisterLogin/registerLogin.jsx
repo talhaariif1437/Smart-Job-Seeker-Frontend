@@ -60,7 +60,7 @@ const RegisterLogin = () => {
       return;
     }
 
-    axios.post("http://localhost:7000/api/auth/signup", {
+    axios.post("https://smartjobseeker-fe218b533e4f.herokuapp.com/api/auth/signup", {
       name: formData.name,
       email: formData.email,
       password: formData.password,
@@ -78,7 +78,7 @@ const RegisterLogin = () => {
 
   const handleSignInSubmit = (e) => {
     e.preventDefault();
-    axios.post("http://localhost:7000/api/auth/login", {
+    axios.post("https://smartjobseeker-fe218b533e4f.herokuapp.com/api/auth/login", {
       email: formData.email,
       password: formData.password,
     })

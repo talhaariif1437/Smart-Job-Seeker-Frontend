@@ -37,7 +37,7 @@ const JobDetails = () => {
   
   useEffect(()=>{
     axios
-    .get(`http://localhost:7000/api/job/jobItem/${id}`, {
+    .get(`https://smartjobseeker-fe218b533e4f.herokuapp.com/api/job/jobItem/${id}`, {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${token}`
@@ -99,7 +99,7 @@ const JobDetails = () => {
   const handleApply = () => {
     console.log(id)
     axios
-    .post(`http://localhost:7000/api/job/applyJob/${id}`,{},{
+    .post(`https://smartjobseeker-fe218b533e4f.herokuapp.com/api/job/applyJob/${id}`,{},{
       headers: {
         
         'Authorization': `Bearer ${token}`

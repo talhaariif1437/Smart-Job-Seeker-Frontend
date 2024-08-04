@@ -6,7 +6,7 @@ function SocialTraffic() {
   const token = localStorage.getItem("token");
 
   useEffect(() => {
-    axios.get("http://localhost:7000/api/job/companyJobList", {
+    axios.get("https://smartjobseeker-fe218b533e4f.herokuapp.com/api/job/companyJobList", {
       headers: {
         'Content-Type': 'multipart/form-data',
         'Authorization': `Bearer ${token}`

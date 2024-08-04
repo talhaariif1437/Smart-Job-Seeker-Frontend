@@ -26,7 +26,7 @@ const ChangePassword = () => {
 
     try {
       const token = localStorage.getItem("token");
-      const response = await axios.post('http://localhost:7000/api/auth/changePassword', {
+      const response = await axios.post('https://smartjobseeker-fe218b533e4f.herokuapp.com/api/auth/changePassword', {
         currentPassword,
         newPassword,
         confirmNewPassword

@@ -20,7 +20,7 @@ const RecommendedJob = ({ job, JobseekerOptions }) => {
     const token = localStorage.getItem("token");
     axios
       .post(
-        `http://localhost:7000/api/job/jobViewCount/${jobId}`,
+        `https://smartjobseeker-fe218b533e4f.herokuapp.com/api/job/jobViewCount/${jobId}`,
         
         {
           headers: {
@@ -172,7 +172,7 @@ const RecJobList = () => {
   const [jobs ,setJobs ]=useState([]);  
   useEffect(()=>{
     axios
-    .get("http://localhost:7000/api/job/jobRecommend"
+    .get("https://smartjobseeker-fe218b533e4f.herokuapp.com/api/job/jobRecommend"
       ,{
         headers: {
           'Content-Type': 'application/json',

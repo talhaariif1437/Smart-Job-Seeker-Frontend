@@ -377,7 +377,7 @@ export default function Job() {
   
       axios
         .post(
-          "http://localhost:7000/api/job/jobPost",
+          "https://smartjobseeker-fe218b533e4f.herokuapp.com/api/job/jobPost",
           { job },
           {
             headers: {

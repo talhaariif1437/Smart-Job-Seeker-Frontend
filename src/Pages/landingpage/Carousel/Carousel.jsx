@@ -13,7 +13,7 @@ const JobCard = ({ job, JobseekerOptions }) => {
     const token = localStorage.getItem("token");
     axios
       .post(
-        `http://localhost:7000/api/job/jobViewCount/${jobId}`,
+        `https://smartjobseeker-fe218b533e4f.herokuapp.com/api/job/jobViewCount/${jobId}`,
         {},
         {
           headers: {
@@ -86,7 +86,7 @@ const Carousel = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:7000/api/job/jobslist", {
+      .get("https://smartjobseeker-fe218b533e4f.herokuapp.com/api/job/jobslist", {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`

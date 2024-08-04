@@ -15,7 +15,7 @@ const Header = () => {
     // Fetch company name and profile picture from API
     const fetchCompanyDetails = async () => {
       try {
-        const response = await axios.get('http://localhost:7000/api/user/companyUser', {
+        const response = await axios.get('https://smartjobseeker-fe218b533e4f.herokuapp.com/api/user/companyUser', {
           headers: {
             'Content-Type': 'application/json',
             'Authorization': `Bearer ${token}`
@@ -45,7 +45,7 @@ const Header = () => {
   return (
     <div className={`fixed w-full flex items-center justify-between h-14 text-white z-10 ${isDark ? 'dark' : ''}`}>
       <div className="flex items-center justify-start md:justify-center pl-3 w-14 md:w-64 h-14 bg-blue-800 dark:bg-gray-800 border-none">
-        <img className="w-7 h-7 md:w-10 md:h-10 mr-2 rounded-md overflow-hidden" src={`http://localhost:7000/${profilePicture}`} alt="Avatar" />
+        <img className="w-7 h-7 md:w-10 md:h-10 mr-2 rounded-md overflow-hidden" src={`https://smartjobseeker-fe218b533e4f.herokuapp.com/${profilePicture}`} alt="Avatar" />
         <span className="hidden md:block">{companyName}</span>
       </div>
       <div className="flex justify-between items-center h-14 bg-blue-800 dark:bg-gray-800 header-right">

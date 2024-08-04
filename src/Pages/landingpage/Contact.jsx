@@ -23,7 +23,7 @@ const Contact = () => {
 
     try {
       
-      const response = await axios.post("http://localhost:7000/api/user/contactUs", formData);
+      const response = await axios.post("https://smartjobseeker-fe218b533e4f.herokuapp.com/api/user/contactUs", formData);
 
       console.log("Form submitted successfully:", response.data);
 

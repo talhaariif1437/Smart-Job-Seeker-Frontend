@@ -14,7 +14,7 @@ const ForgotPassword = () => {
     console.log(email)
 
     
-      const response = await axios.post("http://localhost:7000/api/auth/forgotPassword", {email});
+      const response = await axios.post("https://smartjobseeker-fe218b533e4f.herokuapp.com/api/auth/forgotPassword", {email});
       const responseData = response.data;
       console.log(response.data)
 

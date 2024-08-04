@@ -11,7 +11,7 @@ function StatisticsCards() {
   // useEffect to handle side effects if needed
   useEffect(() => {
     // Fetch data from API
-    axios.get("http://localhost:7000/api/job/companyJobList",{
+    axios.get("https://smartjobseeker-fe218b533e4f.herokuapp.com/api/job/companyJobList",{
       headers: {
         'Content-Type': 'multipart/form-data', // Use multipart/form-data for image uploads
         'Authorization': `Bearer ${token}`
@@ -31,7 +31,7 @@ function StatisticsCards() {
 
   useEffect(() => {
     // Fetch data from API
-    axios.get("http://localhost:7000/api/user/jobSeekerList",{
+    axios.get("https://smartjobseeker-fe218b533e4f.herokuapp.com/api/user/jobSeekerList",{
       headers: {
         'Content-Type': 'multipart/form-data', // Use multipart/form-data for image uploads
         'Authorization': `Bearer ${token}`
