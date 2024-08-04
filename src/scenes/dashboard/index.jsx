@@ -39,7 +39,7 @@ const Dashboard = () => {
     },
     {
       title: jobPostedCount !== null ? jobPostedCount?.toString() : "Loading...",
-      subtitle: "Total Job Posted",
+      subtitle: "Total Jobs Posted",
       progress: 0.5,
       increase: "+30%",
       icon: (
@@ -73,7 +73,7 @@ const Dashboard = () => {
   ];
 
   useEffect(() => {
-    axios.get("http://localhost:7000/api/user/companyList")
+    axios.get("https://smartjobseeker-fe218b533e4f.herokuapp.com/api/user/companyList")
       .then((response) => {
         // Assuming response.data is an array of companies
         setCompanyCount(response.data.users.length);
@@ -84,7 +84,7 @@ const Dashboard = () => {
   }, []);
 
   useEffect(() => {
-    axios.get("http://localhost:7000/api/user/jobSeekerList")
+    axios.get("https://smartjobseeker-fe218b533e4f.herokuapp.com/api/user/jobSeekerList")
       .then((response) => {
         // Assuming response.data is an array of companies
         setJobSeekerCount(response.data.users.length);
@@ -94,7 +94,7 @@ const Dashboard = () => {
       });
   }, []);
   useEffect(() => {
-    axios.get("http://localhost:7000/api/job/jobsList"
+    axios.get("https://smartjobseeker-fe218b533e4f.herokuapp.com/api/job/jobsList"
       ,{
         headers: {
           'Content-Type': 'multipart/form-data', // Use multipart/form-data for image uploads
@@ -105,7 +105,8 @@ const Dashboard = () => {
       .then((response) => {
         console.log(response)
         // Assuming response.data is an array of companies
-        setJobPostedCount(response.data.length);
+        setJobPostedCount(response.data.result.data.length);
+        console.log("Talha posted jobs are here",setJobPostedCount);
       })
       .catch((error) => {
         console.error("Error fetching company list:", error);
