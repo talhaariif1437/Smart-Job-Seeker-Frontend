@@ -279,7 +279,7 @@ function Navbar() {
         </Link>
         <div className="admin-user tooltip-element" data-tooltip="1">
           <div className="admin-profile hide">
-            <img src="src/assets/qwerty.jpg" alt="" />
+            <img src="src/assets/logo2.jpg" alt="" />
             <div className="admin-info">
               <h3>Talha</h3>
               <h5>Admin</h5>
