@@ -29,7 +29,7 @@ const UsersTable = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:7000/api/user/companyList")
+      .get("https://smartjobseeker-fe218b533e4f.herokuapp.com/api/user/companyList")
       .then((response) => {
         console.log(response);
         // Ensure each row has a unique `id` property

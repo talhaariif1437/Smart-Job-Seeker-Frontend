@@ -29,7 +29,7 @@ const JobseekersTable = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:7000/api/user/jobSeekerList")
+      .get("https://smartjobseeker-fe218b533e4f.herokuapp.com/api/user/jobSeekerList")
       .then((response) => {
         console.log(response);
         setRowData(response.data.users.map(user => ({ ...user, id: user._id }))); // Ensure each row has an `id`
