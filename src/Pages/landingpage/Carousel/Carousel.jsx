@@ -86,7 +86,7 @@ const Carousel = () => {
 
   useEffect(() => {
     axios
-      .get("https://smartjobseeker-fe218b533e4f.herokuapp.com/api/job/jobslist", {
+      .get("https://smartjobseeker-fe218b533e4f.herokuapp.com/api/job/joblist", {
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${token}`
