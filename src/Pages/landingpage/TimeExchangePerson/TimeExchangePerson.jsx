@@ -39,7 +39,7 @@ function TimeExchangePerson() {
             <h3 className="font-semibold text-base text-gray-900 dark:text-gray-50">Time Exchange Job Seekers</h3>
           </div>
           <div className="relative w-full max-w-full flex-grow flex-1 text-right">
-            <button className="bg-blue-500 dark:bg-gray-100 text-white active:bg-blue-600 dark:text-gray-800 dark:active:text-gray-700 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">See all</button>
+            <button className="bg-blue-500 dark:bg-gray-100 text-white active:bg-blue-600 dark:text-gray-800 dark:active:text-gray-700 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button" onClick={()=> alert("Please Login first to check details !")}>See all</button>
           </div>
         </div>
         <div className="block w-full">
